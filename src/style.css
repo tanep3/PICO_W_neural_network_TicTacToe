@@ -1,0 +1,20 @@
+body {
+        background-color: rgb(186, 253, 230);
+}
+
+.center {
+        text-align: center;
+        margin: 0 auto;
+}
+
+.panel {
+        width: 100px;
+        height: 100px;
+        font-size: 5.3em;
+        background-color: rgb(255, 255, 194);
+        vertical-align: middle;
+}
+
+.text_size {
+        font-size: 2em;
+}

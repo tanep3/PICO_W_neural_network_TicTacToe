@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ai Tic Tac Toe</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="center">Ai Tic Tac Toe</h1>
+        <p></p>
+        <div class="center">
+            <form action="/start" method="POST">
+                <select class="text_size" name="turn">
+                    <option value="O" {selected_O}>O（先攻）</option>
+                    <option value="X" {selected_X}>X（後攻）</option>
+                </select>
+                <input type="submit" class="text_size" {disabled} value="START"></input>
+            </form>
+        </div>
+        <p></p>
+        <div class="center">
+            <form action="/put_piece" method="POST">
+                <table class="center">
+                    <tr>
+                        <td><input class="center panel" type="submit" value="{00}" name="00"></input></td>
+                        <td><input class="center panel" type="submit" value="{01}" name="01"></input></td>
+                        <td><input class="center panel" type="submit" value="{02}" name="02"></input></td>
+                    </tr>
+                    <tr>
+                        <td><input class="center panel" type="submit" value="{10}" name="10"></input></td>
+                        <td><input class="center panel" type="submit" value="{11}" name="11"></input></td>
+                        <td><input class="center panel" type="submit" value="{12}" name="12"></input></td>
+                    </tr>
+                    <tr>
+                        <td><input class="center panel" type="submit" value="{20}" name="20"></input></td>
+                        <td><input class="center panel" type="submit" value="{21}" name="21"></input></td>
+                        <td><input class="center panel" type="submit" value="{22}" name="22"></input></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <p></p>
+        <div class="center text_size">{message}</div>
+</body>
+
+</html>
